@@ -32,7 +32,11 @@ namespace WindowsFormsApp1
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            DetailsForms detailsForms = new DetailsForms(txtButtonLabel.Text);
+            detailsForms.Show();
+
+            Baza_szwalniaEntities db = new Baza_szwalniaEntities();
+
+                   }
     }
 }
